@@ -23,6 +23,14 @@ body {
     padding: 2em;
 }
 
+input {
+    font: 22px/1 "Inconsolata", monospace;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
 p {
     margin: 0;
 }
@@ -80,12 +88,4 @@ li:first-child {
 
 li:last-child {
     margin: 0 0 1em;
-}
-
-input {
-    font: 22px/1 "Inconsolata", monospace;
-    background: none;
-    border: none;
-    outline: none;
-    color: inherit;
 }
