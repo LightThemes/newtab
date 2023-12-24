@@ -48,6 +48,9 @@ function search(e) {
   else if (result == "xqc") {window.open("https://twitch.tv/xqc", "_blank"); clearInput()}
   else if (result == "poke") {window.open("https://twitch.tv/pokelawls", "_blank"); clearInput()}
   else if (result == "btmc") {window.open("https://twitch.tv/btmc", "_blank"); clearInput()}
+  else if (result == "charlie") {window.open("https://www.youtube.com/@penguinz0/videos", "_blank"); clearInput()}
+  else if (result == "ntts") {window.open("https://www.youtube.com/@NoTextToSpeech/videos", "_blank"); clearInput()}
+  else if (result == "stew") {window.open("https://www.youtube.com/@sst3w/videos", "_blank"); clearInput()}
   else {window.open("https://www.google.com/search?q=" + result, "_blank"); clearInput()}
 }
 
