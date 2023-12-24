@@ -1,5 +1,3 @@
-window.location = "https://lightthemes.github.io/newtab/";
-
 window.onkeyup = keyup;
 var inputTextValue;
 
