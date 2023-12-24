@@ -82,7 +82,7 @@ li:last-child {
     margin: 0 0 1em;
 }
 
-textarea:focus, input, input:focus{
+input {
     font: 22px/1 "Inconsolata", monospace;
     background: none;
     border: none;
