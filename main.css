@@ -81,3 +81,11 @@ li:first-child {
 li:last-child {
     margin: 0 0 1em;
 }
+
+textarea:focus, input, input:focus{
+    font: 22px/1 "Inconsolata", monospace;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+}
