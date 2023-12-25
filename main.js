@@ -57,10 +57,18 @@ function search(e) {
 function keyup(e) {
   inputTextValue = e.target.value;
   if (e.keyCode == 13) {
-    if (inputTextValue == "") {
+    if (/^\s*$/.test(inputTextValue)) {
       return
     } else {
-      search(e);
+      if (inputTextValue.indexOf('.') !== -1) {
+        if (inputTextValue.includes("https://")) {
+          window.open(inputTextValue, "_blank");
+        } else {
+          window.open("https://" + inputTextValue, "_blank");
+        }
+      } else {
+        search(e);
+      }
     }
   }
 }
