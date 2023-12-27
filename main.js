@@ -23,7 +23,7 @@ function clearInput() {
 
 function openURL(link) {
   window.location = link;
-}
+};
 
 document.addEventListener("visibilitychange", (event) => {
   if (document.visibilityState == "visible") {
