@@ -23,7 +23,7 @@ function clearInput() {
 
 function openURL(link) {
   window.location = link;
-};
+}
 
 document.addEventListener("visibilitychange", (event) => {
   if (document.visibilityState == "visible") {
@@ -62,7 +62,8 @@ function keyup(e) {
   inputTextValue = e.target.value;
   if (e.keyCode == 13) {
     if (/^\s*$/.test(inputTextValue)) {return};
-    if (inputTextValue.includes("https://") && inputTextValue.indexOf(".") !== -1) {window.location = inputTextValue; return}
+    if (inputTextValue.includes("https://") && inputTextValue.indexOf(".") !== -1) {window.location = inputTextValue; return};
+    if (inputTextValue.indexOf(".") !== -1) {window.location = "https://" + inputTextValue; return}
     else {
       if (~inputTextValue.indexOf("+")) {
         const newStr = inputTextValue.replace("+", "+%2B+");
