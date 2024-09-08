@@ -1,9 +1,7 @@
 window.onkeyup = keyup;
 var inputTextValue;
 
-function autoOpen() {
-  var item = document.getElementById("searchTxt").value;
-  result = item.toLowerCase();
+function list(result) {
   if (result == "twitch") {openURL("https://www.twitch.tv");}
   else if (result == "youtube") {openURL("https://www.youtube.com/");}
   else if (result == "osu") {openURL("https://osu.ppy.sh/users/16780466");}
@@ -23,6 +21,15 @@ function autoOpen() {
   else if (result == "charlie") {openURL("https://www.youtube.com/@penguinz0/videos");}
   else if (result == "ntts") {openURL("https://www.youtube.com/@NoTextToSpeech/videos");}
   else if (result == "stew") {openURL("https://www.youtube.com/@sst3w/videos");}
+  
+}
+
+function autoOpen() {
+  var item = document.getElementById("searchTxt").value;
+  result = item.toLowerCase();
+  if (item.includes("https://") || item.includes("http://") && item.indexOf(".") !== -1) {window.location = item; return};
+  if (item.indexOf(".") !== -1) {window.location = "https://" + item; return}
+  list(result);
 }
 
 function rafAsync() {
